@@ -83,6 +83,46 @@ test.describe('Ordino Home Dashboard - Test Suite', () => {
         await homePage.step_logout();
     });  
 
+     test('Verify Profile Logout 11', async ({ loginPage, homePage }) => {
+        await loginPage.goto();
+        await loginPage.step_enterUsername("admin@platform.com");
+        await loginPage.step_enterPassword("admin");
+        await loginPage.step_clickLogin();           
+        await homePage.step_logout();
+    });  
+
+     test('Verify Profile Logout 12', async ({ loginPage, homePage }) => {
+        await loginPage.goto();
+        await loginPage.step_enterUsername("admin@platform.com");
+        await loginPage.step_enterPassword("admin");
+        await loginPage.step_clickLogin();           
+        await homePage.step_logout();
+    });  
+
+     test('Verify Profile Logout 13', async ({ loginPage, homePage }) => {
+        await loginPage.goto();
+        await loginPage.step_enterUsername("admin@platform.com");
+        await loginPage.step_enterPassword("admin");
+        await loginPage.step_clickLogin();           
+        await homePage.step_logout();
+    });  
+
+     test('Verify Profile Logout 14', async ({ loginPage, homePage }) => {
+        await loginPage.goto();
+        await loginPage.step_enterUsername("admin@platform.com");
+        await loginPage.step_enterPassword("admin");
+        await loginPage.step_clickLogin();           
+        await homePage.step_logout();
+    });  
+
+     test('Verify Profile Logout 15', async ({ loginPage, homePage }) => {
+        await loginPage.goto();
+        await loginPage.step_enterUsername("admin@platform.com");
+        await loginPage.step_enterPassword("admin");
+        await loginPage.step_clickLogin();           
+        await homePage.step_logout();
+    });  
+
      test('Verify Profile Logout incorrect 11', async ({ loginPage, homePage }) => {
         await loginPage.goto();
         await loginPage.step_enterUsername("admin@platform.com");
