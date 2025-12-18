@@ -6,9 +6,10 @@ export class LoginPage {
     
     private txt_username = '#username';
     private txt_password = '#password';
-    private btn_login = '#login-button';
-
+    private btn_login = '#login-button';  
     private txt_error = '#username-helper-text';
+
+    private btn_loginIncorrect = '#login-buttonxxxxx';
    
     page: Page;
     
@@ -32,6 +33,11 @@ export class LoginPage {
     }
 
     async step_clickLogin() {
+        await oi.ui(this.page).button(this.btn_login).click();
+        return new HomePage(this.page);
+    }
+
+    async step_clickLoginIncorrect() {
         await oi.ui(this.page).button(this.btn_login).click();
         return new HomePage(this.page);
     }
