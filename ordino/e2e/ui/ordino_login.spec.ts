@@ -49,7 +49,47 @@ test.describe('Ordino Auth Sign-in - Test Suite', () => {
     await loginPage.step_clickLogin()
   })
 
-  test('Auth Sign-in with In-Valid Credentials 6', async ({ loginPage, homePage }) => {
+  test('Auth Sign-in with In-Valid Credentials 7', async ({ loginPage, homePage }) => {
+    await loginPage.goto()
+    await loginPage.step_enterUsername("admin")
+    await loginPage.step_enterPassword("wrongPassword")
+    await loginPage.validate_login_error()
+    await loginPage.step_clickLogin()
+  })
+
+  test('Auth Sign-in with In-Valid Credentials 8', async ({ loginPage, homePage }) => {
+    await loginPage.goto()
+    await loginPage.step_enterUsername("admin")
+    await loginPage.step_enterPassword("wrongPassword")
+    await loginPage.validate_login_error()
+    await loginPage.step_clickLogin()
+  })
+
+  test('Auth Sign-in with In-Valid Credentials 9', async ({ loginPage, homePage }) => {
+    await loginPage.goto()
+    await loginPage.step_enterUsername("admin")
+    await loginPage.step_enterPassword("wrongPassword")
+    await loginPage.validate_login_error()
+    await loginPage.step_clickLogin()
+  })
+
+  test('Auth Sign-in with In-Valid Credentials 10', async ({ loginPage, homePage }) => {
+    await loginPage.goto()
+    await loginPage.step_enterUsername("admin")
+    await loginPage.step_enterPassword("wrongPassword")
+    await loginPage.validate_login_error()
+    await loginPage.step_clickLogin()
+  })
+
+  test('Auth Sign-in with In-Valid Credentials 11', async ({ loginPage, homePage }) => {
+    await loginPage.goto()
+    await loginPage.step_enterUsername("admin")
+    await loginPage.step_enterPassword("wrongPassword")
+    await loginPage.validate_login_error()
+    await loginPage.step_clickLogin()
+  })
+
+  test('Auth Sign-in with In-Valid Credentials 12', async ({ loginPage, homePage }) => {
     await loginPage.goto()
     await loginPage.step_enterUsername("admin")
     await loginPage.step_enterPassword("wrongPassword")
